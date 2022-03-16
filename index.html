@@ -6,145 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./travel.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Caribbean Travels</title>
 </head>
 <body>
-    <nav class="navbar">
-        <span class="text-center">Section about COVID-19 restrictions</span>
-        <div class="navbar-elements">
-            <div class="navbar__contact text-center">navbar__contacts</div>
-            <div class="navbar__sections">
-                <figure>
-                    <img src="./assets/images/logo.png" alt="caribbean travel logo">
-                </figure>
-                <ul class="nav-list-section">
-                    <li><a href="http://">Inicio</a></li>
-                    <li><a href="http://">Paquetes</a></li>
-                    <!-- <li><a href="http://"></a></li> -->
-                    <li><a href="http://">Sobre nosotros</a></li>
-                    <li><a href="http://">Contáctanos</a></li>
+    <header>
+        <nav class="navbar">
+            <div class="logo-brand">
+                <img src="./assets/images/logo.webp" alt="brujula">
+            </div>
+            <div class="navbar__menu-toggle">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <img src="./assets/icons/menu.svg" alt="">                    
+                </label>
+                <!-- <span class="menu">
+                    <img src="./assets/icons/menu.svg" alt="">
+                </span> -->
+                <ul>
+                    <li><a href="">Paquetes</a></li>
+                    <li><a href="">Sobre nosotros</a></li>
+                    <li><a href="">Aliados</a></li>
+                    <li><a href="">Others</a></li>
                 </ul>
             </div>
+        </nav>
+        <!-- <small>Covid-19</small> -->
+        <div class="header__title--container">
+            <h1>Será un viaje inolvidable</h1>
+            <p>
+                Y para cerrar con broche de oro
+                esta etapa de tu vida, vente 
+                con nosotros a...
+            </p>
+            <a class="header--button" href="http://">
+                Conoce Nuestros Planes <span>i</span>
+            </a>
         </div>
-    </nav>
-    <header class="hero">
-        <h1 class="hero-title">Caribbean Travels</h1>
-        <h2>Será un viaje inolvidable</h2>
-        <p>Y para cerrar con broche de oro
-            esta etapa de tu vida, vente 
-            con nosotros a...</p>
     </header>
-    <main>
-        <section class="why-choose-us">
-            <h1>why choose us</h1>
-            <div class="why-choose-us-elements">
-                <div class="why-choose-us-items">
-                    <div class="item-choose-us">
-                        <img src="./assets/images/protection.png" alt="security image">
-                        <div>
-                            <h4>Seguridad</h4>
-                            <p>
-                                Control de riesgos en todas las 
-                                actividades, tanto en espacios abiertos
-                                como en establecimientos de dirvesión, 
-                                por profesionales capacitados y 
-                                comprometidos con tu seguridad e 
-                                integridad.
-                            </p>    
-                        </div>
-                    </div>
-                    <div class="item-choose-us">
-                        <img src="./assets/images/bus96.png" alt="image bus">
-                        <div>
-                            <h4>Transporte privado</h4>
-                            <p>
-                                Para tu confort y seguridad tenemos 
-                                transporte privado para todas las salidas
-                                diurnas y nocturnas que se realicen
-                                en la Isla. Este servicio contempla 
-                                también los traslados Aeropuerto Hotel 
-                                y Hotel Aeropuerto.
-                            </p>    
-                        </div>
-                    </div>
-                    <div class="item-choose-us">
-                        <img src="./assets/images/stethoscope96.png" alt="image stethoscope">
-                        <div>
-                            <h4>Resguardo</h4>
-                            <p>
-                                Equipo Médico y Paramédico de asistencia
-                                continua las 24 horas del día, con 
-                                protocolos Covid desde antes de la 
-                                salida de Caracas y monitoreo permanente 
-                                durante  todo el viaje. Además, cobertura 
-                                de asistencia médica de Seguro Internacional
-                                por 100.000 USD.
-                            </p>    
-                        </div>
-                    </div>
-                    <div class="item-choose-us">
-                        <img src="./assets/images/form64.png" alt="image form">
-                        <div>
-                            <h4>Planilla medica</h4>
-                            <p>
-                                El equipo médico tendrá apoyo en la 
-                                Información que tú y tus padres nos 
-                                suministren en el formularios digital que te
-                                enviaremos 60 días antes del viaje. Esta 
-                                Información es confidencial y de vital
-                                importancia para resguardar tu salud.
-                            </p>    
-                        </div>
-                    </div>
-                    <div class="item-choose-us">
-                        <img src="./assets/images/staff64.png" alt="image people group">
-                        <div>
-                            <h4>Personal staff</h4>
-                            <p>
-                                Personal de Staff Profesional y 
-                                experiencia abocado a todas las 
-                                actividades y eventos donde vas a 
-                                participar. Diversión y momentos 
-                                inolvidables garantizados.
-                            </p>    
-                        </div>
-                    </div>
-                    <div class="item-choose-us">
-                        <img src="./assets/images/conversation64.png" alt="image cloud conversation">
-                        <div>
-                            <h4>Comunicacion permanente</h4>
-                            <p>
-                                Comunicación permanente antes, durante y
-                                finalizado el viaje, con reuniones
-                                previas contigo y con tus padres. 
-                                Asimismo, comunicaciones en redes 
-                                sociales personales y colectivas con 
-                                los grupos, padres y representantes. 
-                                Asistencia e información administrativa
-                                como personal.
-                            </p>    
-                        </div>
-                    </div>
-                </div>
-                <div class="call-to-action">
-                    call to action
-                </div>    
-            </div>
-        </section>
-        <section>
-            <h1>Slide travels</h1>
-        </section>
-        <section>
-            <h1>Popular tours</h1>
-        </section>
-        <section>
-            <h1>Aliados</h1>
-        </section>
-    </main>
-    <footer>
-        footer 👣 
-    </footer>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
 </body>
 </html>

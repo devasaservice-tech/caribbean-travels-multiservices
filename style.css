@@ -1,0 +1,167 @@
+/* 
+CONVENCION
+
+1. Posicionamiento
+2. Box model
+3. Tipografia
+4. Visuales
+5. Otros
+ */
+
+:root {
+    --cyber-grape: #6A458C;
+    --magenta-haze: #9F4678;
+    --old-gold: #CCC33D;
+    --dark-khaki: #C5C17B;
+    --warm-black: #201E1C;
+    --warm-black-1: #282623;
+    --off-white: #FAF8F7;
+    --just-white: #FEFEFE;
+    --font-dm: 'DM Sans', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --normal: 300;
+    --medium: 500;
+    --bold: 700;
+}
+
+/* base styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-dm);
+}
+
+/* fonts */
+
+/* mobile styles */
+header {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 450px;
+    min-width: 320px;
+    /* place-content: center; */
+    /* justify-items: center; */
+    text-align: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg,
+     rgba(255,255,255,1) 0%, rgba(106,69,140,1) 87%);
+}
+
+header nav {
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* direction: rtl; */
+    justify-items: left;
+    padding: 0 1em;
+    background-color: var(--just-white)
+
+}
+
+.navbar__menu-toggle {
+    align-self: center;
+    justify-self: right;
+}
+
+#check {
+    display: none;
+}
+.checkbtn {
+    display: none;
+}
+
+.checkbtn img {
+    height: 4em;
+    cursor: pointer;
+}
+
+.navbar__menu-toggle ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.navbar__menu-toggle ul li {
+    margin-right: 2em;
+}
+
+.navbar span {
+    display: inline-block;
+}
+
+.navbar span img {
+    width: 4em;
+    height: 4em;
+}
+
+.logo-brand {
+    align-self: center;
+}
+
+.logo-brand img {
+    width: 16em;
+    height: 8em;
+    margin-left: 0.5em;
+    /* background-color: var(--dark-khaki); */
+    /* margin-top: 60px; */
+}
+
+.header__title--container {
+    width: 90%;
+    height: 218px;
+    min-width: 288px;
+    max-width: 900px;
+    justify-self: center;
+    /* margin-top: 40px; */
+}
+
+/* MEDIA QUERIES */
+
+/* mobile styles */
+@media (max-width: 320px) {
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .navbar__menu-toggle {
+        /* background-color: var(--dark-khaki); */
+    }
+
+    .navbar__menu-toggle ul {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        /* top: 8em;
+        left: 100%; */
+            font-size: 1.2em;
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            background: var(--cyber-grape);
+            top: 6.7em;
+            line-height: 5rem;
+            left: 100%;
+           
+    }
+
+    .navbar__menu-toggle ul li {
+        margin: 0;
+    }
+    
+    #check:checked ~ul {
+        left: 0%;
+    }
+}
