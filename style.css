@@ -205,10 +205,31 @@ header nav {
     .navbar__menu-toggle ul li {
         margin: 0;
     }
-    
+
+    .imgToggle {
+        width: 48px;
+        height: 48px;
+        background-image: url('./assets/icons/menu.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+
     #check:checked ~nav .navbar__menu-toggle > ul {
         left: 0%;
         padding-top: 10.5rem;
+    }
+
+    #check:checked ~nav .navbar__menu-toggle > label > div {
+        /* display: none; */
+        display: block;
+        width: 48px;
+        height: 48px;
+        background-image: url('./assets/icons/close.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #check:checked ~nav + div > .header--button {
@@ -216,3 +237,4 @@ header nav {
     }
 
 /* } */
+
