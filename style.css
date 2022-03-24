@@ -237,5 +237,147 @@ header nav {
         display: none;
     }
 
+    main {
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    /* popular tours section */
+    .popular-tours {
+        width: 100%;
+        height: 350px;
+        /* background-color: #C5C17B; */
+    }
+
+    .popular-tours h2 {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: bold;
+        /* line-height: 2.6rem; */
+        /* text-align: center; */
+    }
+
+    .slider {
+        position: relative;
+    }
+
+    .slider__container {
+        display: none;
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        /* background-color: var(--cyber-grape); */
+    }
+
+    .slider__container img {
+        width: 85%;
+        height: 250px;
+        align-self: center;
+    }
+
+    .slider__container p {
+        width: 90%;
+        height: 2rem;
+        margin-top: -0.5rem;
+        margin-left: 16px;
+        padding-left: 10px;
+        padding-top: 3px;
+        padding-bottom: 4px;
+        text-align: left;
+        background-color: var(--cyber-grape);
+        color: var(--just-white);
+        border: none;
+        border-radius: 3px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-style: oblique;
+    }
+
+    .slider__container--prev, 
+    .slider__container--next {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        padding: 5px;
+        color: #6A458C;
+        cursor: pointer;
+        font-size: 2rem;
+        transition: 0.1s;
+        user-select: none;
+    }
+
+    .slider__container--prev:hover, 
+    .slider__container--next:hover {
+        color: antiquewhite;
+    }
+
+    .slider__container--next {
+        right: 0;
+    }
+
+    .slider--dotsbox {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 20px;
+        cursor: pointer;
+    }
+
+    .dotsbox--dot {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        margin: 0 5px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .active, .dotsbox--dot:hover {
+        border-color: var(--magenta-haze);
+    }
+
+    /* animations */
+    .fade {
+        /* -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s; */
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from { opacity: 0.8; }
+        to { opacity: 1; }
+    }
+
+    @keyframes fade {
+        from { opacity: 0.8; }
+        to { opacity: 1; }
+    }
+
+    img {
+        transform: scale(.9, .9);
+        -webkit-animation-name: zoomin;
+        -webkit-animation-duration: 40s;
+        animation-name: zoomin;
+        animation-duration: 10s;
+    }
+
+    @-webkit-keyframes zoomin {
+        from { transform: scale(.9, .9) }
+        to { transform: scale(1, 1) }
+    }
+
+    @keyframes zoomin {
+        from { transform: scale(.9, .9) }
+        to { transform: scale(1, 1) }
+    }
+
+
 /* } */
 

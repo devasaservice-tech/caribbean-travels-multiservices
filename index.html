@@ -46,10 +46,35 @@
             </a>
         </div>
     </header>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
+    <main>
+        <section class="popular-tours">
+            <h2>Tours populares</h2>
+            <div class="slider">
+                <div class="slider__container fade" style="display: block;">
+                    <img src="./assets/images/punta_cana.jpg" alt="">
+                    <p>Punta Cana, República Dominicana</p>
+                </div>
+                <div class="slider__container fade">
+                    <img src="./assets/images/isla_de_coche.jpg" alt="">
+                    <p>Isla de Coche, Margarita</p>
+                </div>
+                <div class="slider__container fade">
+                    <img src="./assets/images/cancun.jpg" alt="">
+                    <p>Cancún, México</p>
+                </div>
+                <a class="slider__container--prev" onclick="showSlides(-1)">&#10094;</a>
+                <a class="slider__container--next" onclick="showSlides(1)">&#10095;</a>
+                <div class="slider--dotsbox">
+                    <span class="dotsbox--dot" onclick="currenSlide(1)"></span>
+                    <span class="dotsbox--dot" onclick="currenSlide(2)"></span>
+                    <span class="dotsbox--dot" onclick="currenSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
 </body>
 </html>
