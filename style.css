@@ -243,6 +243,7 @@ header nav {
     }
 
     /* popular tours section */
+
     .popular-tours {
         width: 100%;
         height: 350px;
@@ -259,124 +260,91 @@ header nav {
         /* text-align: center; */
     }
 
-    .slider {
+    .cards {
+        display: flex;
+        height: 280px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card__container {
+        display: none;
+        width: 90%;
+        height: 250px;
+    }
+
+    .card__container img {
+        display: block;
+        position: relative;
+        width: 98%;
+        height: 98%;
+        object-fit: cover;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .card-footer {
+        display: block;
+        width: 98%;
+        text-align: center;
+        color: #fff;
+        background-color: var(--cyber-grape);
+        padding: 2%;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .slider__wrapper {
         position: relative;
     }
 
-    .slider__container {
-        display: none;
-        width: 100%;
-        height: 250px;
-        text-align: center;
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
-        /* background-color: var(--cyber-grape); */
+    .slider__wrapper--cards {
+        /* display: none; */
+        overflow: hidden;
     }
 
-    .slider__container img {
-        width: 85%;
-        height: 250px;
-        align-self: center;
-    }
-
-    .slider__container p {
-        width: 90%;
-        height: 2rem;
-        margin-top: -0.5rem;
-        margin-left: 16px;
-        padding-left: 10px;
-        padding-top: 3px;
-        padding-bottom: 4px;
-        text-align: left;
-        background-color: var(--cyber-grape);
-        color: var(--just-white);
-        border: none;
-        border-radius: 3px;
-        font-size: 1.2rem;
-        font-weight: bold;
-        font-style: oblique;
-    }
-
-    .slider__container--prev, 
-    .slider__container--next {
+    .slider__card--prev,
+    .slider__card--next {
         position: absolute;
         top: 50%;
-        transform: translate(0, -50%);
-        padding: 5px;
-        color: #6A458C;
-        cursor: pointer;
+        padding: 1rem;
         font-size: 2rem;
-        transition: 0.1s;
+        color: var(--magenta-haze);
+        cursor: pointer;
         user-select: none;
+        transform: translate(0, -50%);
+        transition: 0.1s;
     }
 
-    .slider__container--prev:hover, 
-    .slider__container--next:hover {
-        color: antiquewhite;
+    .slider__card--prev:hover,
+    .slider__card--next:hover {
+        color: var(--cyber-grape);
     }
 
-    .slider__container--next {
+    .slider__card--next {
         right: 0;
     }
 
-    .slider--dotsbox {
+    .slider__dotsbox {
         position: absolute;
         left: 50%;
         transform: translate(-50%);
-        bottom: 20px;
+        bottom: 40px;
         cursor: pointer;
     }
 
-    .dotsbox--dot {
+    .slider__dotsbox--dot {
         display: inline-block;
-        width: 1rem;
-        height: 1rem;
+        width: 10px;
+        height: 10px;
         margin: 0 5px;
         border: 2px solid #fff;
         border-radius: 50%;
         cursor: pointer;
     }
 
-    .active, .dotsbox--dot:hover {
-        border-color: var(--magenta-haze);
-    }
-
-    /* animations */
-    .fade {
-        /* -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s; */
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-        from { opacity: 0.8; }
-        to { opacity: 1; }
-    }
-
-    @keyframes fade {
-        from { opacity: 0.8; }
-        to { opacity: 1; }
-    }
-
-    img {
-        transform: scale(.9, .9);
-        -webkit-animation-name: zoomin;
-        -webkit-animation-duration: 40s;
-        animation-name: zoomin;
-        animation-duration: 10s;
-    }
-
-    @-webkit-keyframes zoomin {
-        from { transform: scale(.9, .9) }
-        to { transform: scale(1, 1) }
-    }
-
-    @keyframes zoomin {
-        from { transform: scale(.9, .9) }
-        to { transform: scale(1, 1) }
-    }
 
 
 /* } */

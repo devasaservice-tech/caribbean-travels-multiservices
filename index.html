@@ -49,25 +49,29 @@
     <main>
         <section class="popular-tours">
             <h2>Tours populares</h2>
-            <div class="slider">
-                <div class="slider__container fade" style="display: block;">
-                    <img src="./assets/images/punta_cana.jpg" alt="">
-                    <p>Punta Cana, República Dominicana</p>
+            <div class="slider__wrapper">
+                <div class="slider__wrapper--cards">
+                    <div class="cards">
+                        <div class="card__container" style="display: block;">
+                            <img src="./assets/images/isla_de_coche.jpg" alt="">
+                            <h3 class="card-footer">Isla de Coche, Margarita</h3>
+                        </div>
+                        <div class="card__container">
+                            <img src="./assets/images/punta_cana.jpg" alt="">
+                            <h3 class="card-footer">Punta Cana, República Dominicana</h3>
+                        </div>
+                        <div class="card__container">
+                            <img src="./assets/images/cancun.jpg" alt="">
+                            <h3 class="card-footer">Cancún, México</h3>
+                        </div>
+                    </div>
                 </div>
-                <div class="slider__container fade">
-                    <img src="./assets/images/isla_de_coche.jpg" alt="">
-                    <p>Isla de Coche, Margarita</p>
-                </div>
-                <div class="slider__container fade">
-                    <img src="./assets/images/cancun.jpg" alt="">
-                    <p>Cancún, México</p>
-                </div>
-                <a class="slider__container--prev" onclick="showSlides(-1)">&#10094;</a>
-                <a class="slider__container--next" onclick="showSlides(1)">&#10095;</a>
-                <div class="slider--dotsbox">
-                    <span class="dotsbox--dot" onclick="currenSlide(1)"></span>
-                    <span class="dotsbox--dot" onclick="currenSlide(2)"></span>
-                    <span class="dotsbox--dot" onclick="currenSlide(3)"></span>
+                <a class="slider__card--prev">&#10094;</a>
+                <a class="slider__card--next">&#10095;</a>
+                <div class="slider__dotsbox">
+                    <span class="slider__dotsbox--dot"></span>
+                    <span class="slider__dotsbox--dot"></span>
+                    <span class="slider__dotsbox--dot"></span>
                 </div>
             </div>
         </section>
