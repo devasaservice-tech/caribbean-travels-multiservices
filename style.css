@@ -284,7 +284,7 @@ header nav {
     .card__container img {
         display: block;
         position: relative;
-        width: 98%;
+        width: 100%;
         height: 98%;
         object-fit: cover;
         border-top-left-radius: 2px;
@@ -295,7 +295,7 @@ header nav {
 
     .card-footer {
         display: block;
-        width: 98%;
+        width: 100%;
         text-align: center;
         color: #fff;
         background-color: var(--cyber-grape);
