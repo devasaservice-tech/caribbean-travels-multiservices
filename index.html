@@ -52,33 +52,36 @@
             <div class="slider__wrapper">
                 <div class="slider__wrapper--cards">
                     <div class="cards">
-                        <div class="card__container" style="display: block;">
+                        <div class="card__container fade" style="display: block;">
                             <img src="./assets/images/isla_de_coche.jpg" alt="">
                             <h3 class="card-footer">Isla de Coche, Margarita</h3>
                         </div>
-                        <div class="card__container">
+                        <div class="card__container fade">
                             <img src="./assets/images/punta_cana.jpg" alt="">
                             <h3 class="card-footer">Punta Cana, República Dominicana</h3>
                         </div>
-                        <div class="card__container">
+                        <div class="card__container fade">
                             <img src="./assets/images/cancun.jpg" alt="">
                             <h3 class="card-footer">Cancún, México</h3>
                         </div>
                     </div>
                 </div>
-                <a class="slider__card--prev">&#10094;</a>
-                <a class="slider__card--next">&#10095;</a>
+                <a class="slider__card--prev" onclick="slidingCard(-1)">&#10094;</a>
+                <a class="slider__card--next" onclick="slidingCard(1)">&#10095;</a>
                 <div class="slider__dotsbox">
-                    <span class="slider__dotsbox--dot"></span>
-                    <span class="slider__dotsbox--dot"></span>
-                    <span class="slider__dotsbox--dot"></span>
+                    <span class="slider__dotsbox--dot active" onclick="activeCard(1)"></span>
+                    <span class="slider__dotsbox--dot" onclick="activeCard(2)"></span>
+                    <span class="slider__dotsbox--dot" onclick="activeCard(3)"></span>
                 </div>
             </div>
+        </section>
+        <section class="">
+
         </section>
         <section></section>
         <section></section>
         <section></section>
-        <section></section>
     </main>
+    <script src="./assets/js/slides.js"></script>
 </body>
 </html>

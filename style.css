@@ -340,12 +340,34 @@ header nav {
         width: 10px;
         height: 10px;
         margin: 0 5px;
-        border: 2px solid #fff;
+        border: 2.5px solid #fff;
         border-radius: 50%;
         cursor: pointer;
     }
 
+    .slider__dotsbox--dot:hover,
+    .active {
+        border-color: var(--cyber-grape);
+    }
 
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from { opacity: 0.8;}
+        to { opacity: 1;}
+    }
+
+    @keyframes fade {
+        from { opacity: 0.8;}
+        to { opacity: 1;}
+    }
+
+    
 
 /* } */
 
