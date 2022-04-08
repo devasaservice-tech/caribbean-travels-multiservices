@@ -36,6 +36,7 @@ CONVENCION
 html {
   font-size: 62.5%;
   font-family: var(--font-dm);
+  background-color: var(--off-white);
 }
 
 h2 {
@@ -58,12 +59,6 @@ header {
   /* place-content: center; */
   /* justify-items: center; */
   text-align: center;
-  /* background: rgb(255,255,255); */
-  /* background: linear-gradient(
-    207deg,
-    rgba(32, 30, 28, 1) 16.69%,
-    rgba(106, 69, 140, 1) 100%
-  ); */
   background-image: url('./assets/images/aircraft-travel.jpg');
   background-position: center;
   background-repeat: no-repeat;
@@ -79,6 +74,7 @@ header nav {
   justify-items: left;
   padding: 0 1em;
   background-color: var(--just-white);
+  box-shadow: 0 0.4em 0.8em rgba(89, 73, 30, 0.16);
 }
 
 .navbar__menu-toggle {
@@ -418,5 +414,44 @@ main {
   font-family: var(--font-inter);
   line-height: 1.8rem;
 }
+
+.section-partners h2 {
+  margin-top: 6rem;
+}
+
+.section-partners .partners__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  height: 320px;
+}
+
+.partners__wrapper .partner-logo {
+  width: 100%;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 2.3rem;
+
+}
+
+.partners__wrapper .partner--neptuno {
+  background-image: url('./assets/images/neptuno.jpeg');
+}
+
+.partners__wrapper .partner--weconnect {
+  background-image: url('./assets/images/weconnect.jpeg');
+}
+
+.partners__wrapper .partner--bareca {
+  background-image: url('./assets/images/bareca.png');
+}
+
+.partners__wrapper .partner--maita {
+  background-image: url('./assets/images/neptuno.jpeg');
+}
+
 
 /* } */
