@@ -453,5 +453,84 @@ main {
   background-image: url('./assets/images/neptuno.jpeg');
 }
 
+footer {
+  background-color: var(--warm-black);
+}
 
+footer article {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+footer .about-us {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  width: 100%;
+} 
+
+footer .about-us img {
+  height: 150px;
+  justify-self: left;
+}
+
+footer .about-us p {
+  text-align: justify;
+  margin-bottom: 2rem;
+  color: var(--off-white);
+  font-size: 1.5rem;
+}
+
+footer article .footer__sections--title {
+  margin-top: 2rem;
+}
+
+footer article .footer__sections--title h2 {
+  text-align: left;
+  margin-bottom: 2.5rem;
+  color: var(--cyber-grape);
+}
+
+.wrapper-comunication {
+  margin-top: -1rem;
+}
+
+.contact-us__communication {
+  display: flex;
+  align-items: center;
+}
+
+.contact-us__communication > span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-top: 1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contact-us__communication > small {
+  align-self: end;
+  margin-left: 1rem;
+  /* padding-bottom: 0.5rem; */
+  color: var(--off-white);
+  font-size: 1.5rem;
+}
+
+footer .contact-us__communication .communication__number {
+  margin-top: 0;
+  background-image: url('./assets/icons/whatsapp24.png');
+}
+
+footer .contact-us__communication .communication__email {
+  background-image: url('./assets/icons/email24.png');
+}
+
+footer .contact-us__communication .communication__address {
+  background-image: url('./assets/icons/address_marker24.png');
+}
+
+
+footer .quicklinks {
+}
 /* } */
