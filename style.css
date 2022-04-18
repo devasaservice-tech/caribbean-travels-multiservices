@@ -494,12 +494,14 @@ footer article .footer__sections--title h2 {
   margin-top: -1rem;
 }
 
-.contact-us__communication {
+.contact-us__communication,
+.contact-us--social-networks {
   display: flex;
   align-items: center;
 }
 
-.contact-us__communication > span {
+.contact-us--channels,
+.social-networks--logo {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -509,28 +511,54 @@ footer article .footer__sections--title h2 {
   background-size: contain;
 }
 
-.contact-us__communication > small {
+.contact-us--coordinates,
+.social-networks--user {
   align-self: end;
   margin-left: 1rem;
-  /* padding-bottom: 0.5rem; */
   color: var(--off-white);
   font-size: 1.5rem;
 }
 
+.social-networks--user {
+  padding-bottom: 0.5rem;
+}
+
 footer .contact-us__communication .communication__number {
   margin-top: 0;
-  background-image: url('./assets/icons/whatsapp24.png');
+  background-image: url('./assets/icons/whatsapp24_fill.png');
 }
 
 footer .contact-us__communication .communication__email {
-  background-image: url('./assets/icons/email24.png');
+  background-image: url('./assets/icons/email24_fill.png');
 }
 
 footer .contact-us__communication .communication__address {
   background-image: url('./assets/icons/address_marker24.png');
 }
 
-
-footer .quicklinks {
+footer .contact-us--social-networks .social-networks--instagram {
+  background-image: url('./assets/icons/instagram24_fill.png');
 }
-/* } */
+
+footer .contact-us--social-networks .social-networks--facebook {
+  background-image: url('./assets/icons/facebook24.png');
+}
+
+footer .contact-us--social-networks .social-networks--twitter {
+  background-image: url('./assets/icons/twitter24_fill.png');
+}
+
+footer article .visit-us {
+  margin-top: 4.5rem;
+}
+
+footer article .visit-us h2 {
+  margin-bottom: 0;
+}
+
+.footer--made-by {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: #353535;
+  color: #F4F7F4;
+}

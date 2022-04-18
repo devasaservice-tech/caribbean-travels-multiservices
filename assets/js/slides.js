@@ -37,7 +37,7 @@ const autoSlide = () => {
 }
 
 let startAutoSlide = autoSlide();
-// let timer = setInterval(startAutoSlide, 4000, 1);
+let timer = setInterval(startAutoSlide, 4000, 1);
 
 // CLICKING CARDS
 const resetTimer = () => {
