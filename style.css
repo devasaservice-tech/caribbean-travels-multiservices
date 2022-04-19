@@ -407,11 +407,14 @@ main {
 
 .card-services__title h3 {
   margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
 .card-services__title p {
   margin-bottom: 1rem;
   font-family: var(--font-inter);
+  font-size: 1.4rem;
+  font-weight: 300;
   line-height: 1.8rem;
 }
 
