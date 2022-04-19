@@ -562,3 +562,37 @@ footer article .visit-us h2 {
   background-color: #353535;
   color: #F4F7F4;
 }
+
+.social-networks-new a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  background: var(--warm-black-1);
+}
+
+.social-networks-new a i {
+  /* padding: 1rem 1.2rem; */
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-top: 8px;
+  margin-left: 8px;
+  color: #e7f2f4;
+  font-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.social-networks--instagram-new {
+  background-image: url('./assets/icons/instagram24_fill.png');
+}
+
+.social-networks--facebook-new {
+  background-image: url('./assets/icons/facebook24.png');
+}
+
+.social-networks--twitter-new {
+  background-image: url('./assets/icons/twitter24_fill.png');
+}
